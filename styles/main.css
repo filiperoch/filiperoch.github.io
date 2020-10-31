@@ -4,10 +4,11 @@
   -webkit-font-smoothing: antialiased;
   outline: none
 }
-body,html {
+
+body, html {
   font-family: Montserrat, sans-serif;
   line-height: 1.6;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .wrap {
@@ -15,7 +16,7 @@ body,html {
   height: 100%;
   margin: 0 auto;
   padding-right: 50px;
-  padding-left: 50px
+  padding-left: 50px;
 }
 
 .main {
@@ -32,13 +33,13 @@ body,html {
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
-  overflow: hidden
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
   .wrap {
     padding-right: 20px;
-    padding-left: 20px
+    padding-left: 20px;
   }
 }
 
@@ -74,31 +75,31 @@ body,html {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   -webkit-transform: translate3d(0,-5px,0);
-  transform: translate3d(0,-5px,0)
+  transform: translate3d(0,-5px,0);
 }
  
 .social__link--linkedin {
-  background-image: url(../images/icon-linkedin.svg)
+  background-image: url(../images/icon-linkedin.svg);
 }
  
 .social__link--twitter {
-  background-image: url(../images/icon-twitter.svg)
+  background-image: url(../images/icon-twitter.svg);
 }
 
 .social__link--instagram {
-  background-image: url(../images/icon-instagram.svg)
+  background-image: url(../images/icon-instagram.svg);
 }
  
 .social__link--github {
-  background-image: url(../images/icon-github.svg)
+  background-image: url(../images/icon-github.svg);
 }
 
 .social__link--whatsapp {
-  background-image: url(../images/icon-whatsapp.svg)
+  background-image: url(../images/icon-whatsapp.svg);
 }
 
 .social__link--email {
-  background-image: url(../images/icon-email.svg)
+  background-image: url(../images/icon-email.svg);
 }
 
 .header {
@@ -107,7 +108,7 @@ body,html {
   right: 20px;
   display: none;
   -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out
+  transition: all .4s ease-in-out;
 }
  
 .menu__list {
@@ -121,11 +122,11 @@ body,html {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 -20px;
-  list-style-type: none
+  list-style-type: none;
 }
 
 .menu__item {
-  margin: 0 20px
+  margin: 0 20px;
 }
 
 .menu__anchor {
@@ -136,12 +137,12 @@ body,html {
   text-decoration: none;
   border-left: 3px solid #000;
   -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out
+  transition: all .4s ease-in-out;
 }
 
 .sidebar {
   width: 35%;
-  height: 100vh
+  height: 100vh;
 }
  
 .sidebar__photo {
@@ -150,12 +151,23 @@ body,html {
   -o-object-fit: cover;
   object-fit: cover;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%)
+  filter: grayscale(100%);
+}
+
+.profile__photo {
+  display: none;
 }
  
 @media screen and (max-width: 768px) {
   .sidebar {
-    display: none
+    display: none;
+  }
+
+  .profile__photo {
+    display: block;
+    border-radius: 50%;
+    width: 20%;
+    margin-left: 40%;
   }
 }
 
@@ -163,25 +175,25 @@ body,html {
   position: relative;
   width: 65%;
   height: 100vh;
-  overflow: auto
+  overflow: auto;
 }
  
 @media screen and (max-width: 768px) {
   .content {
-    width: 100%
+    width: 100%;
   }
 }
 
 .section {
   min-height: 100vh;
   padding-top: 70px;
-  padding-bottom: 70px
+  padding-bottom: 70px;
 }
 
 .section--intro {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
 }
  
 .section--intro, .section__header {
@@ -190,7 +202,7 @@ body,html {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
 }
  
 .section__header {
@@ -198,14 +210,14 @@ body,html {
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-top: 0;
-  margin-bottom: 100px
+  margin-bottom: 100px;
 }
  
 .section__header:after {
   width: 100%;
   height: 4px;
   background-color: #000;
-  content: ""
+  content: "";
 }
 
 .section__title {
@@ -215,25 +227,25 @@ body,html {
   margin-bottom: 0;
   padding-right: 20px;
   font-size: 50px;
-  background-color: #fff
+  background-color: #fff;
 }
  
 @media screen and (max-width: 768px) {
   .section {
     padding-top: 40px;
-    padding-bottom: 40px
+    padding-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 680px) {
   .section__title {
-    font-size: 40px
+    font-size: 40px;
   }
 }
   
 @media screen and (max-width: 520px) {
   .section__title {
-    font-size: 30px
+    font-size: 30px;
   }
 }
   
@@ -241,27 +253,27 @@ body,html {
   margin: 0;
   font-size: 60px;
   font-weight: 300;
-  line-height: 1.2
+  line-height: 1.2;
 }
   
 .intro__title strong {
-  font-weight: 700
+  font-weight: 700;
 }
   
 .intro__role {
   margin-top: 50px;
   margin-bottom: 0;
   font-size: 25px;
-  font-weight: 200
+  font-weight: 200;
 }
   
 @media screen and (max-width: 1370px) {
   .intro__title {
-    font-size: 50px
+    font-size: 50px;
   }
     
   .intro__role {
-    font-size: 18px
+    font-size: 18px;
   }
 }
   
@@ -283,21 +295,21 @@ body,html {
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 100px
+  margin-top: 100px;
 }
 
 .resume__item:first-child {
-  margin-top: 0
+  margin-top: 0;
 }
 
 .resume__org {
-  width: 300px
+  width: 300px;
 }
 
 .resume__org, .resume__logo {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
 }
 
 .resume__logo {
@@ -311,7 +323,7 @@ body,html {
   height: 100px;
   margin-right: 20px;
   border: 1px solid #000;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .resume__site {
@@ -319,41 +331,42 @@ body,html {
   margin: 0;
   padding: 0;
   line-height: 0;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .resume__name {
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 16px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .resume__date p {
   margin: 0;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .resume__jobdescription {
-  width: calc(100% - 300px)
+  width: calc(100% - 300px);
+  text-align: justify;
 }
 
 .resume__jobdescription p, .resume__role {
-  font-size: 16px
+  font-size: 16px;
 }
 
 .resume__role {
   margin-top: 0;
   margin-bottom: 25px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 @media screen and (max-width: 980px) {
   .resume__org, .resume__jobdescription {
-    width: 100%
+    width: 100%;
   }
   
   .resume__org {
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
 }
